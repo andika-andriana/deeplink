@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "nexus_app",
+      "package_name": "com.antikode.loyalty",
+      "sha256_cert_fingerprints": [
+        "23:42:18:59:EB:92:1A:C2:3D:64:6F:07:27:B9:0E:5D:A0:8B:C2:89:F4:54:04:B8:AF:35:D5:4E:F5:E8:2A:96"
+      ]
+    }
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "R5W4ALFK8C.com.antikode.loyalty"
+        ],
+        "components": [
+          {
+            "#": "no_universal_links",
+            "exclude": true,
+            "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+          },
+          {
+            "/": "/app-open",
+            "comment": "Matches URL with a path /app-open"
+          },
+          {
+            "/": "/app-register-otp/*",
+            "comment": "Matches any URL with a path that starts with /app-register-otp/."
+          },
+          {
+            "/": "/app-forgot-otp/*",
+            "comment": "Matches any URL with a path that starts with /app-forgot-otp/."
+          },
+          {
+            "/": "/app-promo/*",
+            "comment": "Matches any URL with a path that starts with /app-promo/."
+          },
+          {
+            "/": "/app-reward/*",
+            "comment": "Matches any URL with a path that starts with /app-reward/."
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "R5W4ALFK8C.com.antikode.loyalty"
+    ]
+  }
+}
