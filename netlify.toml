@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/app-open/"
-  to = "antiloyalty://app-open
+  to = "antiloyalty://app-open/"
   status = 301
   force = true
 
