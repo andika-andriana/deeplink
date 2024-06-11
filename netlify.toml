@@ -1,4 +1,16 @@
 [[redirects]]
+  from = "/app-open/"
+  to = "antiloyalty://app-open
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/app-register-otp/*"
+  to = "antiloyalty://app-register-otp/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/app-forgot-otp/*"
   to = "antiloyalty://app-forgot-otp/:splat"
   status = 301
