@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Deep Link</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .link-container a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .link-container a:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
-    <a href="https://antiloyalty.netlify.app/app-open/">Open App</a>
-    <a href="https://antiloyalty.netlify.app/app-register-otp/asdasdasd"
-      >Register OTP App</a
-    >
-    <a href="https://antiloyalty.netlify.app/app-forgot-otp/asdasdasd"
-      >Forgot OTP App</a
-    >
+    <h1>Test Deep Links</h1>
+    <div class="link-container">
+      <a href="https://antiloyalty.netlify.app/app-open/">Open App</a>
+      <a href="https://antiloyalty.netlify.app/app-register-otp/asdasdasd"
+        >Register OTP App</a
+      >
+      <a href="https://antiloyalty.netlify.app/app-forgot-otp/asdasdasd"
+        >Forgot OTP App</a
+      >
+    </div>
   </body>
 </html>
