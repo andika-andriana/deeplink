@@ -39,6 +39,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(param);
       }
+
       function redirectToApp() {
         const userAgent =
           navigator.userAgent || navigator.vendor || window.opera;
@@ -46,18 +47,19 @@
         const iosStoreLink = "https://apps.apple.com/us/app/6479970882";
         const androidStoreLink =
           "https://play.google.com/store/apps/details?id=com.antikode.loyalty";
-        const deeplink = `https://antiloyalty.netlify.app/${path}`;
+        const androidAppLink = `intent://${path}#Intent;scheme=https;package=com.antikode.loyalty;end`;
+        const iosAppLink = `antiloyalty://${path}`;
 
         if (/android/i.test(userAgent)) {
           // Redirect Android users
-          window.location = deeplink;
+          window.location = androidAppLink;
           document.getElementById("fallbackLink").href = androidStoreLink;
           setTimeout(() => {
             window.location = androidStoreLink;
           }, 3000);
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
           // Redirect iOS users
-          window.location = deeplink;
+          window.location = iosAppLink;
           document.getElementById("fallbackLink").href = iosStoreLink;
           setTimeout(() => {
             window.location = iosStoreLink;
