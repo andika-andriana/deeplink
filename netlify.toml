@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/app-open/"
-  to = "antiloyalty://app-open/"
+  from = "/app-forgot-otp/*"
+  to = "antiloyalty://app-forgot-otp/:splat"
   status = 301
   force = true
